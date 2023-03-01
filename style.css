@@ -303,10 +303,123 @@ body {
 .about-right {
   width: 100%;
   padding: 0 3%;
+  margin-right: 5%;
 }
+
+.about-me-txt h2 {
+  color: aqua;
+}
+
 .about-me-txt p {
   margin-top: 10px;
   font-size: 18px;
+  text-align: justify;
+}
+
+/**/
+
+/*** SKILLS ***/
+
+section.skills {
+  margin-top: 100px;
+  height: 100vh;
+}
+
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px
+}
+
+#box {
+  border: 1px solid #fff;
+  min-height: 50px;
+  min-width: 21rem;
+  padding: 10px;
+  line-height: 30px;
+  line-break: initial;
+}
+
+#box p {
+  text-align: center;
+}
+
+#box strong {
+  color: aqua;
+}
+
+.skills-box-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.skills-box-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.skills-box-3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.skills-box-4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.skills-box-5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.skills-box-6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+/**/
+
+/*** PORTFOLIO SECTION ***/
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-gap: 1.5rem;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  width: 110ch;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: max(10rem, 25vh);
+  max-height: max(10rem, 30vh);
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: aqua;
+}
+
+.buttom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
 }
 
 /**/

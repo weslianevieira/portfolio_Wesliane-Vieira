@@ -4,10 +4,10 @@
   * 
 
 DONE: header and home -> html css animation
-DONE: 
+DONE: about section -> html css
+DONE: skills section -> html css
 
-DOING: about section -> html css
-DOING: 
+DOING: porfolio section -> html css
 DOING: 
 
 TODO: webpage multi-language -> html css jquery
