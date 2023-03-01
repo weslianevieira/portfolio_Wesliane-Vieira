@@ -1,0 +1,171 @@
+/*** RESETING DEFAULT CONFIG ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1F2024;
+  color: #fff;
+}
+
+/**/
+
+/*** AUXILIARY CLASSES***/
+
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.title-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 0 3% 0;
+  font-size: 20px;
+  color: #b902b9;
+}
+
+.title-top h1::after {
+  display: block;
+  content: '';
+  width: 90%;
+  height: 3px;
+  margin: 2% 0 0 20%;
+  background-color: white;
+}
+
+/**/
+
+/*** HEADER ***/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  z-index: 100;
+  background: #1F2024;
+
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 35px;
+  display: inline-block;
+  transition: 3s;
+  opacity: 0;
+  animation: slideTop 2s ease forwards;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+  color: #b902b9;
+}
+
+/**/
+
+/*** KEYFRAME ANIMATIONS ***/
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-24px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/**/
