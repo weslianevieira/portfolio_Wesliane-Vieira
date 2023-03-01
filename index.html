@@ -63,7 +63,6 @@
   <!-- ABOUT SECTION -->
   <section class="about-me" id="about-me">
 
-
     <div class="title-top">
       <h1>About</h1>
     </div>
@@ -229,7 +228,67 @@
       </ul>
     </div>
   </section>
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="center">
+      <div class="title-top">
+        <h1>Contact</h1>
+      </div>
 
+      <div class="contact-container">
+
+        <div class="contact-left">
+          <div class="form">
+            <div class="left-part">
+              <i class="fas fa-envelope"></i>
+              <i class="fas fa-at"></i>
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+
+            <form>
+              <h2>Let's Connect</h2>
+              <div class="info">
+                <input id="name" type="text" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+              </div>
+              <p>Message</p>
+              <textarea rows="7" id="message"></textarea>
+              <button onclick="sendmail()" type="button">
+                Submit
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="map">
+            <div class="map-txt">
+              <p>I'm based at</p>
+              <p>Brasília, Distrito Federal - Brazil.</p>
+            </div>
+            <div class='map' id="map"></div>
+            <script src='script.js'></script>
+            <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxNNAZq9sB2BLhN9ASlequnlM8AElyntk&callback=initializer"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- multiple text -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/multipleText.js"></script>
+
+<!-- sendmail -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript" src="js/sendmail.js" async defer></script>
+
+<!-- google maps -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxNNAZq9sB2BLhN9ASlequnlM8AElyntk&callback=initializer">
+  </script>
+<script src="js/googleMaps.js"></script>
 </body>
 
 </html>
